@@ -1,0 +1,16 @@
+name = "s3"
+version = "1.0.0"
+
+[deployment]
+permission = "private"
+nodes = 4
+
+[build]
+dir = "build"
+entry = "s3_debug.wasm"
+command = "npm run build:debug"
+
+[build_release]
+dir = "build"
+entry = "s3.wasm"
+command = "npm run build:release"
